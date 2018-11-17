@@ -11,11 +11,11 @@ assert(s)
 
 -- our timer functions
 local mytimerfunc1 = function(elapsed)
-	print("fn1: ", elapsed)
+	print("fn1: ", minetest.get_us_time(), elapsed)
 end
 
 local mytimerfunc2 = function(elapsed)
-	print("fn2: ", elapsed)
+	print("fn2: ", minetest.get_us_time(), elapsed)
 end
 
 -- our timers
