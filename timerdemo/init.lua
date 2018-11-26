@@ -35,7 +35,7 @@ local t2 = Timer(mytimerfunc2, {
 
 -- t3, does not repeat, anonymous function, not persistent.
 local t3 = Timer(function(elapsed)
-		print("fn3: ", elapsed)
+		print("fn3: ", minetest.get_us_time(), elapsed)
 	end
 	, {
 	interval = 5.3,
